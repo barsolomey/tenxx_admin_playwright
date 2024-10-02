@@ -3,8 +3,11 @@ import { UsersPage } from '../pages/userspage';
 
 test('C44380_open_users_table', async ({ page }) => {
     
-    const usersPage = new UsersPage(page)
+    const usersPage = new UsersPage(page);
 
-    usersPage.navigate()
-    usersPage.checkHeader()
+    await usersPage.navigate()
+    await usersPage.checkHeader();
 })
+
+
+//asdfasdf
