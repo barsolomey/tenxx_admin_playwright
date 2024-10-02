@@ -1,6 +1,6 @@
 import { expect, type Locator, type Page } from '@playwright/test';
 
-class UsersPage {
+export class UsersPage {
   
   readonly page: Page;
   readonly searchInput: Locator;
@@ -24,12 +24,12 @@ class UsersPage {
   }
 
   // Method to navigate to the page
-  async navigate(page: Page) {
+  async navigate() {
     await this.page.goto(this.baseURL);
   }
 
   // Method to check header of the page
-  async checkHeader(page: Page) {
+  async checkHeader() {
     await expect(this.usersTableHeaderText).toBeVisible()
   }
 
