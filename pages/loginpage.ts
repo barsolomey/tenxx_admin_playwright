@@ -27,10 +27,10 @@ export class LoginPage {
     await this.page.locator(this.loginButton).click(); 
   }
 
-  async isLoginSuccessful() {
-    await this.page.waitForSelector('text=Dashboard');  
-    return this.page.isVisible('text=Dashboard');
-  }
+ // async isLoginSuccessful() {
+ //   await this.page.waitForSelector('text=Dashboard');  
+ //   return this.page.isVisible('text=Dashboard');
+//  }
 }
 
 export default LoginPage;

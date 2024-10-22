@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test';
-import { LoginPage } from '../pages/LoginPage';  // Adjust the path based on your folder structure
+import { LoginPage } from '../pages/LoginPage';  
 
-const EMAIL = 'strv.testing@gmail.com';
-const PASSWORD = '<STRVt3sting>';   
+const email = 'strv.testing@gmail.com';
+const password = '<STRVt3sting>';   
 
 test('login', async ({ page }) => {
 
