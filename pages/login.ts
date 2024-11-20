@@ -32,7 +32,7 @@ export class LoginPage {
   // Method to insert passwoed
   async fillPassword() {
     await this.passwordInput.click();
-    await this.passwordInput.fill('<STRVt3sting>');
+    await this.passwordInput.fill('STRVt3sting');
   }
 // Method to click on Submit
   async SignUp() {

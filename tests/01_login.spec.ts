@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { LoginPage } from '../pages/loginpage';  
+import { LoginPage } from '../pages/login';
 
 test('login success', async ({ page }) => {
   
@@ -9,4 +9,7 @@ test('login success', async ({ page }) => {
     await loginPage.fillPassword();
     await loginPage.SignUp();
     await loginPage.prjSelect();
+
+    await page.context().storageState({ path: './auth.json' });  // Save Signed-in state
 });
+

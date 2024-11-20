@@ -8,6 +8,8 @@ const config = {
   },
   testDir: './tests',          // Directory where tests are stored
   timeout: 30000,              // Timeout for each test in milliseconds
+  retries: 1,                 // Number of retries for failed tests
+  workers: 1,                 // Run tests sequentially
 };
 
 module.exports = config;
